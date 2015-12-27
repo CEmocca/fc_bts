@@ -1,0 +1,28 @@
+*.class
+*.log
+
+# sbt specific
+.cache/
+.history/
+.lib/
+dist/*
+test/
+public/
+target/
+lib_managed/
+src_managed/
+project/plugins/project/
+project/project
+project/target
+
+# Scala-IDE specific
+.scala_dependencies
+.worksheet
+
+# Inteliji
+.idea/
+
+# activator
+activator
+activator-launch-*.jar
+
