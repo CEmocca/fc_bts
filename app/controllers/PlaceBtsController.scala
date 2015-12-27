@@ -2,10 +2,9 @@ package controllers
 
 import controllers.PlaceController._
 import models.PlaceBtsUtil._
-import play.api.libs.json._
 import play.api.libs.json.Json
 import play.api.mvc.Action
-import schema.{PlaceBtsTable, PlaceTable}
+import schema.PlaceBtsTable
 
 /**
   * Created by aputtaraksa on 12/27/2015.

@@ -8,9 +8,9 @@ import scala.slick.driver.PostgresDriver.simple._
 import scala.slick.lifted.Tag
 
 /**
-  * Created by aputtaraksa on 12/27/2015.
+  * Created by aputtaraksa on 12/28/2015.
   */
-class BtsMoveSchema(tag: Tag) extends Table[BtsMove](tag, "bts_move"){
+class BtsDetailSchema(tag: Tag) extends Table[BtsMove](tag, "bts_move"){
 
   def startId = column[Short]("start_id", O.PrimaryKey)
   def terminalId = column[Short]("terminal_id", O.PrimaryKey)

@@ -13,14 +13,17 @@ GET     /station/id/:id                 controllers.StationController.getStation
 GET     /station/name/:name             controllers.StationController.getStationByName(name: String)
 GET     /station/near/:id               controllers.PlaceBtsController.getPlaceNearBtsById(id: Int)
 
+# /bts/stations/:stationId/places/:placeId
+
 ####################### Place ########################
 GET     /place                          controllers.PlaceController.getAllPlace
 GET     /place/id/:id                   controllers.PlaceController.getPlaceById(id: Int)
 GET     /place/name/:name               controllers.PlaceController.getPlaceByName(name: String)
 GET     /place/near/:id                 controllers.PlaceBtsController.getBtsNearPlaceById(id: Int)
 
-####################### Place near Bts #####################
-# GET     /
+####################### Bts Move #####################
+GET     /bts/move                       controllers.BtsMoveController.getBtsMove
+GET     /bts/detail/:id                 controllers.BtsMoveController.getBtsDetail(id: Int)
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)
