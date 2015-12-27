@@ -1,0 +1,26 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+#GET     /                           controllers.Application.index
+#GET     /users                      controllers.Application.users
+
+
+####################### STATION ######################
+GET     /station                        controllers.StationController.getAllStation
+GET     /station/id/:id                 controllers.StationController.getStationById(id: Int)
+GET     /station/name/:name             controllers.StationController.getStationByName(name: String)
+GET     /station/near/:id               controllers.PlaceBtsController.getPlaceNearBtsById(id: Int)
+
+####################### Place ########################
+GET     /place                          controllers.PlaceController.getAllPlace
+GET     /place/id/:id                   controllers.PlaceController.getPlaceById(id: Int)
+GET     /place/name/:name               controllers.PlaceController.getPlaceByName(name: String)
+GET     /place/near/:id                 controllers.PlaceBtsController.getBtsNearPlaceById(id: Int)
+
+####################### Place near Bts #####################
+# GET     /
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.at(path="/public", file)
