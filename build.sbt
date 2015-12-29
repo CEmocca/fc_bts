@@ -9,7 +9,8 @@ libraryDependencies ++= Seq(
   jdbc,
   anorm,
   cache,
-  ws
+  ws,
+  filters
 )
 
 libraryDependencies ++= Seq(
