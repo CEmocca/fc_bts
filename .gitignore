@@ -25,4 +25,4 @@ project/target
 # activator
 activator
 activator-launch-*.jar
-
+nohup.out
